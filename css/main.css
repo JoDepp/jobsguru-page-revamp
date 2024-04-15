@@ -88,7 +88,7 @@ textarea {
    ========================================================================== */
 body {
   background-color: white;
-  color: darkslategray;
+  color: #696969;
   font-family: 'Roboto', sans-serif;
   font-size: 1rem;
   font-weight: 200;
@@ -108,15 +108,22 @@ h1, h3, h4 , h5, span {
   font-family: 'Raleway', sans-serif;
 }
 
-header, #work, #skills, #about, #contact, footer {
+header, #work, #about, #skills, #contact, footer {
   display: flex;
   justify-content: center;
   text-align: center;
   flex-flow: row wrap;
 }
 
-.content-wrapper {
-  width: 85%
+header .content-wrapper {
+  display: flex;
+  align-items: center;
+  flex-flow: row wrap;
+  margin: 0;
+}
+
+header {
+  padding: 15px 0;
 }
 
 header nav ul li {
@@ -129,7 +136,21 @@ header nav ul li {
 
 a {
   text-decoration: none;
-  color: darkslategray;
+  color: #696969;
+}
+
+.header-divider {
+  background:whitesmoke; 
+}
+
+header figure {
+  width: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  margin-top: 0px;
+  padding-left: 10px;
 }
 
 ul {
@@ -142,7 +163,7 @@ ul {
     
 li {
   line-height: 1.5rem;
-  color:  darkslategray;
+  color: #696969;
 }
 
 #work p, #about p {
@@ -150,19 +171,19 @@ li {
   width: 100%;
 }
 
-#contact-link {
-  background-color:;
-  color: #eee4f0;
+.skills-link {
+  background-color:whitesmoke;
+  color: smoke;
   padding: 10px 15px;
   border-radius: 30px;
 }    
 
-#contact-link:hover {
+.skills-link:hover {
   background-color:#ff0000;
   color:#100f12;
 }
 
-h1, .portfolio-header {
+h1, .goal {
   padding: 30px;
   font-size: 1.75rem;
   line-height: 1.5;
@@ -219,13 +240,18 @@ img {
   filter: drop-shadow(1px 2px 6px lightgrey);
 }
 
-.project-description {
+#project-description {
   margin: 0 0 20px 0;
+  text-align: left;
 }
 
 .project-link:hover {
-  background-color:#009933;
+  background-color:#40634c;
   color:red;
+}
+
+#sign-up {
+  color:#ff0000;
 }
 
 #work {
@@ -236,8 +262,9 @@ img {
   text-align: left;
 }
 
-#project-box span {
+.project-box span {
   font-weight: bold;
+  text-align: left;
 }
 
 .project-link {
@@ -304,7 +331,7 @@ footer {
   padding: 80px 0;
 }
 
-#contact h3 {
+#skills h3 {
   margin-top: 40px;
   margin-bottom: 60px;
 }
@@ -356,7 +383,7 @@ footer .follow-section {
 }
 
 a {
-  color:#351D77;
+  color:#222;
   background-color: transparent;
 }
 
@@ -426,6 +453,11 @@ footer .contact-info {
         width: 80%;
       }
 
+      header .content-wrapper {
+        width: 100%;
+        justify-content: space-between;
+      }
+
       .greeting {
         display: flex;
         flex-flow: row wrap;
@@ -471,7 +503,7 @@ footer .contact-info {
         margin: 40px 0 60px 0;
       }
 
-      #skills {
+      #about {
         padding-top: 80px;
         padding-bottom: 80px;
       }
@@ -590,6 +622,10 @@ footer .contact-info {
         width: 100%;
       }
 
+      .content-wrapper {
+        max-width: 960px;
+      }
+
       .greeting h2 {
         max-width: 70%;
         font-size: 2rem;
@@ -610,11 +646,11 @@ footer .contact-info {
         width: 30%;
       }
 
-      .skills-header {
+      #contact-header {
         font-size: 3rem;
       }
 
-      #skills .content-wrapper {
+      #about .content-wrapper {
         max-width: 1000px;
       }
 
