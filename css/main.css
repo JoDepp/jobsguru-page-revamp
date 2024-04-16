@@ -114,6 +114,10 @@ h1, h3, h4 , h5, span {
   background-color: whitesmoke;
 }
 
+#try-free {
+  color:#ff0000;
+}
+
 header, #work, #about, #skills, #contact, footer {
   display: flex;
   justify-content: center;
@@ -204,7 +208,7 @@ main .content-wrapper {
   margin: 20px;
 }
 
-.portfolio-wrapper {
+.portfolio-wrapper, .about-content-wrapper {
   display: flex;
   justify-content: center;
   align-items: flex-start;
@@ -221,7 +225,7 @@ main .content-wrapper {
 }
 
 figure {
-  margin: 20px 0 40px 0;
+  margin: 0;
   display: block;
 }
 
@@ -229,6 +233,10 @@ img {
   width: 100%;
   height: auto;
   filter: drop-shadow(1px 2px 6px lightgrey);
+}
+
+#job-seeker {
+  padding-right: 20px;
 }
 
 #project-description {
@@ -626,7 +634,7 @@ footer .contact-info {
       }
 
       .project-box, .skill, .tool {
-        width: 30%;
+        width: 50%;
       }
 
       #contact-header {
